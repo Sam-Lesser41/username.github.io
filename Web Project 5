@@ -1,0 +1,87 @@
+Exercise #1
+Problem Statement
+Write a program that asks the user for their name and greets them with their name.
+
+Plans and Pseudocode
+
+Initialize variable for customerName
+
+Output the word Hello
+Hello!=”Hello” + customerName + “ How are you today?”
+
+Solution
+var customerName = prompt("Please enter your name", "<name goes here>");
+
+if (customerName!= null) {
+
+    document.getElementById("Hello!").innerHTML =
+
+    "Hello " + customerName + "! How are you doing?";
+
+}
+Demonstration
+customerName= Sam
+Hello Sam! How are you today?
+
+
+
+
+
+
+
+
+Exercise #2
+Problem Statement
+Write a program that converts feet to inches.
+
+Plans and Pseudocode
+Initialize variable for feet
+Declare variable for Inches
+Inches= feet* 12
+Output Inches
+
+Solution
+var feet = 6;
+var inch;
+inch = feet * 12
+document.getElementById(“inches”).innerHTML = “ Inches = “ + inch
+
+Demonstration
+Feet:6
+Inches= 72
+
+
+
+
+
+
+
+
+
+
+
+Exercise #3
+Problem Statement
+Write a program that converts numbers 1-10 to Roman Numerals. 
+
+Plans and Pseudocode
+Initialize variable for num
+Declare variable for romannum
+Input number between 1-10 for num
+If num is 
+Solution
+unction romanize (num) {
+	if (!+num)
+		return false;
+	var	digits = String(+num).split(""),
+		key = ["","I","II","III","IV","V","VI","VII","VIII","IX"],
+		roman = "",
+		i = 3;
+	while (i--)
+		roman = (key[+digits.pop() + (i * 10)] || "") + roman;
+	return Array(+digits.join("") + 1).join("M") + roman;
+}
+Demonstration
+Number: 5
+Roman number: V
+
